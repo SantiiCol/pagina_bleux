@@ -1,0 +1,953 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: #1e172f;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+header img{
+    margin-left: 150px;
+}
+
+nav{
+    width: 50vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 35vw;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    color: #7e7987;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+a:hover{
+    color: white;
+}
+
+.btn-dw{
+    border: 0px;
+    background: linear-gradient(150deg, #9500ff, #00ddff);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+}
+
+.sec-1{
+    width: 50%;
+    background-color: #2e2550;
+    text-align: center;
+    padding-top: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sec-1 h1{
+    color: white;
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.sec-1 p{
+    color: white;
+    margin: 10px;
+}
+
+.sec-2{
+    width: 50%;
+    background: url(/images/hojasFondo.jpg);
+    background-size: cover;
+}
+
+.sec-2 img{
+    width: 13vw;
+    margin: 40px;
+    margin-left: 200px;
+    margin-top: 180px;
+}
+
+.art-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 250px;
+    text-align: start;
+}
+
+.caja-dw{
+    display: flex;
+    border: 2px solid #7e7987;
+    height: 4vh;
+    width: 35%;
+    align-items: center;
+    padding: 25px 1px;
+    margin-left: 260px;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+.caja-dw div{
+    width: 100%;
+    list-style: none;
+    padding: 9px;
+    border: 1px solid white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.caja-dw a{
+    color: white;
+    text-decoration: none;
+}
+
+.now-dw a{
+    font-size: 14px;
+}
+
+.now-dw:hover{
+    background-color: white;
+}
+
+.now-dw a:hover{
+    color: #f18abf;
+}
+
+.feature:hover{
+    background-color: white;
+}
+
+.feature a:hover{
+    color: #f18abf;
+}
+
+.container-sub-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f2f7;
+}
+
+.container-sub-main h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 30px;
+    color: #f41486;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.prin-sub-main{
+    display: flex;
+}
+
+.lap-img{
+    width: 60%; 
+    margin-top: 50px;
+    text-align: center;  
+}
+
+.lap-img img{
+    width: 35vw;
+    margin-bottom: 50px;
+}
+
+.info-lap{
+    width: 40%;
+    margin-top: 50px;
+}
+
+.info-lap h2{
+    color: #c95e96;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info-lap p{
+    font-size: 1.2rem;
+    width: 60%;
+    margin-bottom: 10px;
+    color: #7e7e80;
+}
+
+.info-lap h3{
+    color: #f42c92;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.info-lap img{
+    width: 15px;
+    color: #f41486;
+}
+
+.planes{
+    background: #1e172f;
+}
+
+.titulo-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-plan h1{
+    color: white;
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
+
+.titulo-plan p{
+    color: white;
+    margin-top: 20px;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 50px;
+}
+
+.card{
+    width: 15%;
+    background-color: white;
+}
+
+.logo-card{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-card-1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-card-1 h3{
+    color: #f41a89;
+}
+
+.precio{
+    background: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.precio b{
+    font-size: 13px;
+}
+
+.lista-card{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    align-items: baseline ;
+}
+
+.lista-card li{
+    margin-bottom: 15px;
+}
+
+.lista-card img{
+    width: 16px;
+    margin-bottom: 17.6px;
+}
+
+.icon-cards{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.text-cards{
+    width: 90%;
+    margin-left: 20px;
+}
+
+.text-cards li{
+    color: #6f6f6f;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.info-card p{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.suscribe-btn-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.suscribe-btn-card button{
+    padding: 10px;
+    width: 8vw;
+    border: none;
+    background: linear-gradient(245deg,  #f41486, #e887b9);
+    border-radius: 5px;
+    color: white;
+}
+
+.suscribe-btn-card button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.suscribe-btn-card-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.suscribe-btn-card-2 button{
+    padding: 10px;
+    width: 8vw;
+    border: none;
+    background:#2e2550;
+    border-radius: 5px;
+    color: white;
+}
+
+.suscribe-btn-card-2 button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.card{
+    margin-bottom: 50px;
+}
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div{
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+footer div p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #6f6f6f;
+}
+
+.redes{
+    margin-left: 200px;
+}
+
+@media(max-width:1279px) {
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    nav ul{
+        width: 40vw;
+    }
+
+    header img{
+        width: 15%;
+        margin-left: 100px;
+    }
+
+    .art-1{
+        margin-left: 50px;
+        width: auto;
+    }
+    .art-1 h1{
+        font-size: 2rem;
+    }
+
+    .caja-dw{
+        width: 70%;
+        padding: 25px 1px;
+        margin-left: 60px;
+    }
+
+    .now-dw{
+        width: 80%;
+    }
+
+    .container-sub-main h1{
+        font-size: 2rem;
+    }
+
+    .info-lap{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .info-lap p{
+        width: 90%;
+    }
+
+    .lap-img{
+        width: 50%;
+        margin-top: 100px;
+    }
+
+    .cards{
+        gap: 25px;
+    }
+
+    .card{
+        width: 25%;
+    }
+
+    .suscribe-btn-card button{
+        width: auto;
+    }
+
+    .suscribe-btn-card{
+        margin-bottom: 10px;
+    }
+
+    .suscribe-btn-card-2 button{
+        width: auto;
+    }
+
+    .suscribe-btn-card-2{
+        margin-bottom: 10px;
+    }
+
+    footer div{
+        margin-right: 50px;
+    }
+}
+
+
+@media (max-width:920px){
+    nav ul li a{
+        font-size: 13px;
+    }
+
+    .art-1{
+        margin-left: 50px;
+    }
+
+    .sec-2 img{
+        margin-left: 100px;
+    }
+    
+    .caja-dw{
+        width: 70%;
+        padding: 25px 1px;
+        margin-left: 60px;
+    }
+
+    .caja-dw a{
+        font-size: 12px;
+    }
+
+    .now-dw{
+        padding: auto;
+    }
+
+    .info-lap h2{
+        font-size: 2rem;
+    }
+
+    .info-lap p{
+        font-size: 15px;
+    }
+
+    .titulo-plan h1{
+        font-size: 1.5rem;
+    }
+
+    .titulo-plan p{
+        font-size: 13px;
+        width: 55%;
+    }
+
+    .icon-cards{
+        margin-left: 20px;
+    }
+
+    .info-card p{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    footer div {
+        margin-left: 10px;
+    }
+
+    footer div p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px){
+    nav ul li a{
+        font-size: 9px;
+    }
+
+    nav{
+        width: 48vw;
+    }
+
+    header img{
+        margin-left: 50px;
+        width: 20%;
+    }
+
+    .btn-dw{
+        padding: 5px;
+    }
+
+    .sec-1{
+        padding-top: 150px;
+    }
+
+    .art-1{
+        margin-left: 30px;
+        font-size: 10px;
+    }
+
+
+    .sec-2 img{
+        margin-left: 80px;
+        width: 35%;
+    }
+    
+    .caja-dw{
+        width: 80%;
+        padding: 20px 1px;
+        margin-left: 40px;
+    }
+
+    .caja-dw a{
+        font-size: 10px;
+    }
+
+    .caja-dw div{
+        padding: 6px;
+    }
+
+    .now-dw{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .now-dw a{
+        font-size: 7px;
+    }
+
+    .feature a{
+        font-size: 7px;
+    }
+
+    .container-sub-main h1{
+        font-size: 1.5rem;
+    }
+
+    .lap-img{
+        margin-top: 100px;
+    }
+
+    .lap-img img{
+        width: 40vw;
+        margin-bottom: 15px;
+    }
+
+    .info-lap h2{
+        font-size: 1rem;
+    }
+
+    .info-lap p{
+        font-size: 12px;
+    }
+
+    .titulo-plan h1{
+        font-size: 1rem;
+    }
+
+    .titulo-plan p{
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .cards{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 55%;
+    }
+
+    .logo-card-1 img{
+        width: 35%;
+    }
+
+    .logo-card-1 h3{
+        font-size: 15px;
+    }
+
+    .logo-card img{
+        width: 35%;
+    }
+
+    .logo-card h3{
+        font-size: 15px;
+    }
+
+    .precio{
+        padding: 10px;
+    }
+
+    .lista-card{
+        margin-top: 10px;
+    }
+
+    .text-cards{
+        font-size: 13px;
+    }
+
+    .icon-cards{
+        margin-left: 60px;
+    }
+
+    .lista-card img{
+        width: 15px;
+        margin-bottom: 16.6px;
+    }
+
+    .info-card{
+        margin: 15px;
+    }
+
+    .info-card p{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .redes{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        margin-left: 20px;
+    }
+
+    .redes img{
+        margin-right: 10px;
+    }
+
+    .copy{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .copy p{
+        font-size: 12px;
+    }
+}
+
+@media (max-width:480px){
+
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: white;
+        margin-right: 10px;
+    }
+
+    .cerrar-menu{
+        color: black;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    nav ul li a{
+        font-size: large;
+        margin-bottom: 10px;
+        border-bottom: 1px solid;
+    }
+
+    header img{
+        margin-left: 50px;
+        width: 30%;
+    }
+
+    .btn-dw{
+        padding: 5px;
+    }
+
+    .sec-1{
+        padding-top: 125px;
+    }
+
+    .sec-1 h1{
+        font-size: 1.2rem;
+    }
+
+    .art-1{
+        margin-left: 15px;
+        font-size: 10px;
+    }
+
+
+    .sec-2 img{
+        margin-left: 50px;
+        width: 40%;
+    }
+    
+    .caja-dw{
+        width: 80%;
+        height: 15vh;
+        padding: 7px 10px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-dw a{
+        font-size: 10px;
+    }
+
+    .caja-dw div{
+        padding: 1px;
+    }
+
+    .now-dw{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .now-dw a{
+        font-size: 8px;
+    }
+
+    .feature{
+        margin: 0px;
+    }
+
+    .feature a{
+        font-size: 8px;
+    }
+
+    .container-sub-main h1{
+        font-size: 1.5rem;
+    }
+
+    .prin-sub-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lap-img{
+        margin-top: 30px;
+    }
+
+    .lap-img img{
+        width: 50vw;
+    }
+
+    .info-lap{
+        margin-left: 50px;
+        width: 60%;
+    }
+
+    .info-lap h2{
+        font-size: 1.2rem;
+    }
+
+    .info-lap p{
+        font-size: 12px;
+    }
+
+    .titulo-plan h1{
+        font-size: 1rem;
+    }
+
+    .titulo-plan p{
+        font-size: 12px;
+        width: 70%;
+    }
+
+    .cards{
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 75%;
+    }
+
+    .logo-card-1 img{
+        width: 35%;
+    }
+
+    .logo-card-1 h3{
+        font-size: 15px;
+    }
+
+    .logo-card img{
+        width: 35%;
+    }
+
+    .logo-card h3{
+        font-size: 15px;
+    }
+
+    .precio{
+        padding: 10px;
+    }
+
+    .lista-card{
+        margin-top: 10px;
+    }
+
+    .text-cards{
+        font-size: 13px;
+    }
+
+    .icon-cards{
+        margin-left: 60px;
+    }
+
+    .lista-card img{
+        width: 15px;
+        margin-bottom: 16.6px;
+    }
+
+    .info-card{
+        margin: 15px;
+    }
+
+    .info-card p{
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .redes{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        margin-left: 0px;
+    }
+
+    .redes img{
+        margin-right: 20px;
+    }
+
+    .copy{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        border-bottom: 1px solid gray;
+    }
+
+    .copy p{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+}
+
